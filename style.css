@@ -1,7 +1,209 @@
+:root {
+  --clr-cyan: hsl(179, 62%, 43%);
+  --bg-primary: hsl(204, 43%, 93%);
+  --clr-primary: hsl(218, 22%, 67%);
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: var(--clr-primary);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--bg-primary);
+}
+
+main {
+  width: 90%;
+  max-width: 650px;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--bg-primary);
+  -webkit-box-shadow: 0 0 30px -10px var(--clr-primary);
+          box-shadow: 0 0 30px -10px var(--clr-primary);
+  border-radius: 7px;
+}
+
+main > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+}
+
+main .upper-section {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 40px 50px;
+  border-radius: 7px 7px 0 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .upper-section h1 {
+  color: var(--clr-cyan);
+  font-size: 28px;
+}
+
+main .upper-section h2 {
+  color: #c0df34;
+  font-size: 20px;
+}
+
+main .upper-section p {
+  color: var(--clr-primary);
+  line-height: 1.5;
+}
+
+main .lower-section {
+  -ms-flex-preferred-size: 150%;
+      flex-basis: 150%;
+  background: cornflowerblue;
+  border-radius: 0 0 7px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .lower-section > div {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+main .lower-section .left-section {
+  background: #2ab2af;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .lower-section .left-section > * {
+  color: var(--bg-primary);
+}
+
+main .lower-section .left-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+main .lower-section .left-section h1 {
+  font-size: 32px;
+  position: relative;
+}
+
+main .lower-section .left-section h1::after {
+  content: "per month";
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0.7;
+  letter-spacing: 0.7px;
+}
+
+main .lower-section .left-section p {
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+main .lower-section .left-section button {
+  width: 100%;
+  height: 45px;
+  background: #c0df34;
+  border: none;
+  cursor: pointer;
+  color: #2ab2af;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+main .lower-section .left-section button:focus {
+  outline: none;
+}
+
+main .lower-section .left-section button:hover {
+  background: #b7d822;
+}
+
+main .lower-section .left-section button:active {
+  background: #accb20;
+}
+
+main .lower-section .right-section {
+  background: #2fc6c4;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .lower-section .right-section > * {
+  color: var(--bg-primary);
+}
+
+main .lower-section .right-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+main .lower-section .right-section p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.4;
 }
 /*# sourceMappingURL=style.css.map */
